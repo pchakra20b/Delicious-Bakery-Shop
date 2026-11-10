@@ -1,0 +1,1567 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ডেলিশিয়াস বেকারি | কাস্টম কেক ও আর্টিসান বেকারি (সকাল ১০টা – রাত ১০টা)</title>
+  <meta name="description" content="প্রতিদিন সকাল ১০টা থেকে রাত ১০টা পর্যন্ত খোলা। যেকোনো পরিবার, স্কুল, কলেজ, প্রতিষ্ঠান ও ইভেন্ট ম্যানেজমেন্টের জন্য কাস্টম কেক। দোকানে এসে কাস্টম কেক রিসিভ করলে ১৫% ছাড় এবং ২ কেজি কেকে ফ্ল্যাট ২০% ছাড়!" />
+  <meta property="og:title" content="ডেলিশিয়াস বেকারি | কাস্টম কেক ও আর্টিসান বেকারি" />
+  <meta property="og:description" content="দোকানে এসে কাস্টম কেক রিসিভ করলে ১৫% ছাড় এবং যেকোনো ২ কেজি কেকে ফ্ল্যাট ২০% ছাড়! হোম ডেলিভারি সুবিধা।" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="bn_BD" />
+
+  <!-- Google Fonts: Noto Serif Bengali, Hind Siliguri, Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            alabaster: '#FAF8F5',
+            espresso: '#141311',
+            terracotta: '#B84A27',
+            borderwarm: '#E8E3DA',
+            muted: '#57534E'
+          },
+          fontFamily: {
+            serifBn: ['"Noto Serif Bengali"', 'serif'],
+            sansBn: ['"Hind Siliguri"', 'sans-serif'],
+            monoEn: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      background-color: #FAF8F5;
+      color: #141311;
+      overflow-x: hidden;
+    }
+    h1, h2, h3, .font-serif-bn {
+      font-family: 'Noto Serif Bengali', serif;
+    }
+    .font-mono-en {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    *:focus-visible {
+      outline: 2px solid #B84A27;
+      outline-offset: 2px;
+    }
+    @media (max-width: 640px) {
+      input, select, textarea {
+        font-size: 16px !important;
+      }
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "ডেলিশিয়াস বেকারি (Delicious Bakery)",
+    "openingHours": "Mo-Su 10:00-22:00",
+    "servesCuisine": "Artisan Bakery & Custom Cakes",
+    "priceRange": "৳৳",
+    "description": "পরিবার, শিক্ষাপ্রতিষ্ঠান ও ইভেন্ট ম্যানেজমেন্টের জন্য কাস্টম কেক। শপ পিকআপে ১৫% ছাড় এবং ২ কেজি কেকে ফ্ল্যাট ২০% ছাড়।"
+  }
+  </script>
+</head>
+<body class="antialiased selection:bg-terracotta selection:text-white">
+
+  <!-- Skip to Content Link -->
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-espresso focus:text-white focus:px-4 focus:py-2 focus:rounded-lg">
+    মূল বিষয়বস্তুতে যান
+  </a>
+
+  <!-- Top Offer & Edit Mode Bar -->
+  <div class="bg-espresso text-[#FAF8F5] text-xs sm:text-sm py-2.5 px-4 border-b border-stone-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-1">
+        <span class="inline-flex items-center gap-1.5 font-medium">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span data-editable="openHours">প্রতিদিন খোলা: সকাল ১০:০০টা – রাত ১০:০০টা</span>
+        </span>
+        <span class="hidden md:inline text-stone-500">•</span>
+        <span class="text-amber-300 font-medium" data-editable="topOfferBanner">
+          🎁 শপ পিকআপে কাস্টম কেকে ১৫% ছাড় | যেকোনো ২ কেজি কেকে ফ্ল্যাট ২০% ছাড়!
+        </span>
+      </div>
+      <div class="flex items-center gap-3 ml-auto">
+        <button id="toggleEditModeBtn" onclick="toggleEditMode()" class="px-3 py-1 rounded-full text-xs font-medium bg-stone-800 hover:bg-terracotta text-white transition border border-stone-700 cursor-pointer">
+          ✏️ তথ্য এডিট মোড: অফ
+        </button>
+        <button id="resetDataBtn" onclick="resetSiteData()" class="hidden px-2.5 py-1 rounded-full text-xs bg-red-900/60 hover:bg-red-700 text-red-100 transition cursor-pointer">
+          রিসেট
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-borderwarm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
+      <!-- Brand Identity -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-xl bg-espresso text-[#FAF8F5] flex items-center justify-center font-serif-bn text-xl font-bold group-hover:bg-terracotta transition">
+          ড
+        </div>
+        <div>
+          <span class="block font-serif-bn text-xl sm:text-2xl font-bold tracking-tight text-espresso" data-editable="brandName">ডেলিশিয়াস বেকারি</span>
+          <span class="block text-xs text-muted font-mono-en tracking-wider uppercase" data-editable="brandTagline">ARTISAN CAKE & PASTRY STUDIO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="প্রধান মেনু" class="hidden xl:flex items-center gap-7 text-sm font-medium text-espresso">
+        <a href="#about" class="hover:text-terracotta transition py-2">আমাদের কথা</a>
+        <a href="#services" class="hover:text-terracotta transition py-2">সবার জন্য সেবা</a>
+        <a href="#packages" class="hover:text-terracotta transition py-2">বিশেষ অফার</a>
+        <a href="#collection" class="hover:text-terracotta transition py-2">বেকারি মেনু</a>
+        <a href="#atelier" class="hover:text-terracotta transition py-2">কাস্টম কেক স্টুডিও</a>
+        <a href="#faq" class="hover:text-terracotta transition py-2">প্রশ্নোত্তর</a>
+        <a href="#contact" class="hover:text-terracotta transition py-2">যোগাযোগ</a>
+      </nav>
+
+      <!-- Actions: Pickup Switcher + Cart + Mobile Menu -->
+      <div class="flex items-center gap-2.5 sm:gap-3">
+        <!-- Quick Delivery/Pickup Mode Toggle -->
+        <button onclick="toggleReceivingMode()" id="headerModeBtn" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold border border-borderwarm bg-white hover:border-terracotta transition cursor-pointer" title="ডেলিভারি অথবা দোকানে এসে রিসিভ মোড পরিবর্তন করুন">
+          <span id="headerModeLabel">🏪 শপ পিকআপ (১৫% ছাড়)</span>
+        </button>
+
+        <!-- Cart Trigger -->
+        <button onclick="toggleCartDrawer(true)" class="relative inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-espresso hover:bg-terracotta text-white text-sm font-medium transition min-h-[44px] cursor-pointer" aria-label="অর্ডার ব্যাগ খুলুন">
+          <span>🛍️ অর্ডার ব্যাগ</span>
+          <span id="cartCountBadge" class="px-2 py-0.5 text-xs rounded-full bg-terracotta text-white font-bold">০</span>
+        </button>
+
+        <!-- Mobile Hamburger Button -->
+        <button onclick="toggleMobileMenu()" class="xl:hidden p-2.5 rounded-xl border border-borderwarm bg-white text-espresso hover:border-terracotta min-h-[44px] min-w-[44px] flex items-center justify-center" aria-label="মোবাইল মেনু">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenuDrawer" class="hidden xl:hidden border-t border-borderwarm bg-white px-4 pt-4 pb-6 space-y-3 shadow-xl">
+      <div class="grid grid-cols-2 gap-2 pb-3 border-b border-borderwarm">
+        <button onclick="setReceivingMode('pickup'); toggleMobileMenu();" class="p-2.5 rounded-xl text-xs font-semibold bg-amber-50 text-terracotta border border-amber-200 text-left">
+          🏪 দোকানে রিসিভ (১৫% ছাড়)
+        </button>
+        <button onclick="setReceivingMode('delivery'); toggleMobileMenu();" class="p-2.5 rounded-xl text-xs font-semibold bg-stone-100 text-espresso border border-stone-200 text-left">
+          🚚 হোম ডেলিভারি সুবিধা
+        </button>
+      </div>
+      <div class="grid grid-cols-2 gap-2 text-sm font-medium">
+        <a href="#about" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">আমাদের কথা</a>
+        <a href="#services" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">সবার জন্য সেবা</a>
+        <a href="#packages" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">১৫% ও ২০% অফার</a>
+        <a href="#collection" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">রেগুলার মেনু</a>
+        <a href="#atelier" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">কাস্টম কেক স্টুডিও</a>
+        <a href="#how-it-works" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">অর্ডার করার নিয়ম</a>
+        <a href="#faq" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">প্রশ্নোত্তর (FAQ)</a>
+        <a href="#contact" onclick="toggleMobileMenu()" class="p-2.5 rounded-lg hover:bg-stone-100">যোগাযোগ</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Edit Mode Guidance Banner -->
+  <div id="editModeBanner" class="hidden bg-amber-100 border-b border-amber-300 text-amber-950 px-4 py-2.5 text-xs sm:text-sm text-center font-medium">
+    ✏️ <strong>তথ্য এডিট মোড চালু আছে:</strong> ওয়েবসাইটের যেকোনো হাইলাইট করা লেখার ওপর ক্লিক করে আপনার বেকারির নাম, ঠিকানা, ফোন নম্বর বা টেক্সট পরিবর্তন করুন। পরিবর্তনগুলো আপনার ব্রাউজারে স্বয়ংক্রিয়ভাবে সেভ হবে।
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- SECTION 1: HERO SECTION -->
+    <section class="relative py-10 sm:py-16 lg:py-20 border-b border-borderwarm overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Left Column: Persuasive Copy & Dual Mega Offers -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex flex-wrap items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-borderwarm text-xs font-semibold text-espresso shadow-2xs">
+              <span class="text-terracotta">★ আপনার এলাকার বিশ্বস্ত বেকারি কিচেন</span>
+              <span class="text-stone-300">|</span>
+              <span data-editable="heroBadgeTime">সকাল ১০টা – রাত ১০টা পর্যন্ত খোলা</span>
+            </div>
+
+            <h1 class="font-serif-bn text-[28px] sm:text-4xl lg:text-[44px] font-bold text-espresso leading-[1.28] tracking-tight" data-editable="heroHeadline">
+              আপনার মনের মতো যেকোনো কাস্টম কেক—যত্নে বেক করা, ঠিক সময়ে আপনার হাতে।
+            </h1>
+
+            <p class="text-base sm:text-lg text-muted leading-relaxed max-w-2xl" data-editable="heroSubheadline">
+              ঘরোয়া জন্মদিন হোক কিংবা স্কুল, কলেজ, অফিস বা বড় ইভেন্ট ম্যানেজমেন্টের আয়োজন—আমাদের আধুনিক মেশিনে সজ্জিত কিচেন ও দক্ষ কারিগর টিম আপনার দেওয়া যেকোনো ডিজাইন ও ফ্লেভারের কেক শতভাগ নিখুঁত মানে তৈরি করে দেয়। ঘরে বসে হোম ডেলিভারি নিন অথবা দোকানে এসে রিসিভ করে বিশেষ ছাড় উপভোগ করুন!
+            </p>
+
+            <!-- Dual Mega Offer Highlight Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-1">
+              <div onclick="applyOfferPreset('pickup15')" class="group cursor-pointer p-4 rounded-2xl bg-white border-2 border-terracotta/30 hover:border-terracotta transition shadow-2xs">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-terracotta text-white">১৫% ফ্ল্যাট ছাড়</span>
+                  <span class="text-xs font-semibold text-terracotta group-hover:translate-x-1 transition">অফার নিন →</span>
+                </div>
+                <p class="font-serif-bn font-bold text-base text-espresso mt-1" data-editable="offer1Title">দোকানে এসে কাস্টম কেক রিসিভ করলে</p>
+                <p class="text-xs text-muted mt-0.5" data-editable="offer1Desc">সরাসরি আমাদের শপ থেকে আপনার কাস্টম কেকটি রিসিভ করলেই বিলের ওপর ১৫% বিশেষ ছাড়!</p>
+              </div>
+
+              <div onclick="applyOfferPreset('cake2kg20')" class="group cursor-pointer p-4 rounded-2xl bg-espresso text-white border-2 border-espresso hover:border-terracotta transition shadow-2xs">
+                <div class="flex items-center justify-between mb-1">
+                  <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-400 text-espresso">২০% মেগা ছাড়</span>
+                  <span class="text-xs font-semibold text-amber-300 group-hover:translate-x-1 transition">অর্ডার করুন →</span>
+                </div>
+                <p class="font-serif-bn font-bold text-base text-white mt-1" data-editable="offer2Title">যেকোনো ২ কেজি কেকের অর্ডারে</p>
+                <p class="text-xs text-stone-300 mt-0.5" data-editable="offer2Desc">জন্মদিন, অফিস বা প্রতিষ্ঠানের জন্য ২ কেজি বা তার বেশি ওজনের কেক অর্ডারে ফ্ল্যাট ২০% ছাড়!</p>
+              </div>
+            </div>
+
+            <!-- Primary & Secondary CTA Buttons -->
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 pt-2">
+              <a href="#atelier" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-xl bg-terracotta hover:bg-[#9e3c1d] text-white font-semibold text-base transition shadow-sm min-h-[48px]">
+                <span>🎂 কাস্টম কেক অর্ডার করুন</span>
+              </a>
+              <a href="#collection" class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white hover:bg-stone-100 text-espresso border border-borderwarm font-semibold text-base transition min-h-[48px]">
+                <span>রেগুলার মেনু ও দাম দেখুন</span>
+              </a>
+            </div>
+
+            <!-- Honest Operational Trust Signals -->
+            <div class="grid grid-cols-3 gap-3 pt-4 border-t border-borderwarm text-xs sm:text-sm">
+              <div>
+                <span class="block font-bold text-espresso">উন্নত মেশিন ও কিচেন</span>
+                <span class="text-muted text-xs">হাইজেনিক ও আধুনিক বেকিং</span>
+              </div>
+              <div>
+                <span class="block font-bold text-espresso">দক্ষ কারিগর টিম</span>
+                <span class="text-muted text-xs">নিখুঁত কাস্টম ফিনিশিং</span>
+              </div>
+              <div>
+                <span class="block font-bold text-espresso">হোম ডেলিভারি ও শপ পিকআপ</span>
+                <span class="text-muted text-xs">ঠিক সময়ে ডেলিভারি গ্যারান্টি</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Custom Work Demonstrator -->
+          <div class="lg:col-span-5">
+            <div class="bg-white rounded-3xl border border-borderwarm p-4 sm:p-6 shadow-sm">
+              <div class="flex items-center justify-between mb-3">
+                <span class="text-xs font-mono-en uppercase tracking-wider text-muted font-semibold">LIVE CUSTOM SERVICE SHOWCASE</span>
+                <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-full">কাস্টম অর্ডার নেওয়া হচ্ছে</span>
+              </div>
+
+              <!-- 3 Interactive Audience Tabs -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-1.5 bg-alabaster p-1.5 rounded-xl border border-borderwarm mb-4" role="tablist">
+                <button onclick="switchHeroShowcase('family')" id="heroTab-family" class="hero-tab py-2 px-3 rounded-lg text-xs font-semibold bg-espresso text-white transition cursor-pointer" role="tab">
+                  ঘরোয়া ও জন্মদিন
+                </button>
+                <button onclick="switchHeroShowcase('institute')" id="heroTab-institute" class="hero-tab py-2 px-3 rounded-lg text-xs font-semibold text-espresso hover:bg-stone-200/60 transition cursor-pointer" role="tab">
+                  স্কুল, কলেজ ও প্রতিষ্ঠান
+                </button>
+                <button onclick="switchHeroShowcase('event')" id="heroTab-event" class="hero-tab py-2 px-3 rounded-lg text-xs font-semibold text-espresso hover:bg-stone-200/60 transition cursor-pointer" role="tab">
+                  ইভেন্ট ম্যানেজমেন্ট
+                </button>
+              </div>
+
+              <!-- Showcase Content Card -->
+              <div id="heroShowcaseCard" class="space-y-4">
+                <div class="relative rounded-2xl overflow-hidden aspect-4/3 bg-stone-100 border border-borderwarm">
+                  <img id="heroShowcaseImg" src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80" alt="কাস্টম বার্থডে ও ফ্যামিলি কেক" width="800" height="600" fetchpriority="high" class="w-full h-full object-cover transition duration-500" />
+                  <div class="absolute bottom-3 left-3 right-3 bg-espresso/90 backdrop-blur-xs text-white p-3 rounded-xl flex items-center justify-between">
+                    <div>
+                      <p id="heroShowcaseBadge" class="text-[11px] text-amber-300 font-medium">স্থানীয় পরিবার ও রেগুলার ক্লায়েন্ট</p>
+                      <p id="heroShowcaseTitle" class="font-serif-bn font-bold text-sm sm:text-base">থিম বার্থডে ও অ্যানিভার্সারি কাস্টম কেক</p>
+                    </div>
+                    <span id="heroShowcaseOfferTag" class="px-2.5 py-1 rounded-lg bg-terracotta text-white text-xs font-bold shrink-0">১৫%–২০% ছাড়</span>
+                  </div>
+                </div>
+
+                <p id="heroShowcaseDesc" class="text-xs sm:text-sm text-muted leading-relaxed">
+                  বাচ্চার পছন্দের কার্টুন থিম, গায়ে হলুদ বা বিবাহবার্ষিকীর যেকোনো রেফারেন্স ছবি আমাদের দিন। কম মিষ্টি বা স্পেশাল ফ্লেভার—যেমনটা চাইবেন, ঠিক তেমনটাই তৈরি করে দেওয়া হবে।
+                </p>
+
+                <div class="flex items-center justify-between pt-2 border-t border-borderwarm">
+                  <span id="heroShowcaseTurnaround" class="text-xs font-semibold text-espresso">⏱️ প্রস্তুতি সময়: একই দিনে / ২৪ ঘণ্টা আগে</span>
+                  <a href="#atelier" class="text-xs font-bold text-terracotta hover:underline">এই ক্যাটাগরিতে অর্ডার করুন →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: ABOUT US (Warm Female Entrepreneur Voice) -->
+    <section id="about" class="py-16 sm:py-20 border-b border-borderwarm bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          <div class="lg:col-span-5">
+            <div class="relative rounded-3xl overflow-hidden border border-borderwarm bg-alabaster p-6 sm:p-8 space-y-5">
+              <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-terracotta text-xs font-bold">আমাদের কিচেনের গল্প</span>
+              <h2 class="font-serif-bn text-2xl sm:text-3xl font-bold text-espresso leading-snug" data-editable="aboutHeadline">
+                আধুনিক মেশিনের নিখুঁত মান আর ঘরের মানুষের মতো আন্তরিক যত্ন—একই ছাদের নিচে।
+              </h2>
+              <p class="text-sm sm:text-base text-muted leading-relaxed" data-editable="aboutParagraph1">
+                অনেকেই আমাদের জিজ্ঞেস করেন, “আপু, ছবির মতো হুবহু কেকটা হবে তো? আর ঠিক সময়ে পাব তো?”—আমাদের উত্তর সবসময় একটাই: আপনার উৎসবের আনন্দ আমাদের কাছে আমানত।
+              </p>
+              <p class="text-sm sm:text-base text-muted leading-relaxed" data-editable="aboutParagraph2">
+                আমাদের বেকারিতে রয়েছে আধুনিক ও উন্নত মানের বেকিং মেশিনারিজ এবং অভিজ্ঞ ও দক্ষ কারিগর টিম। ফলে ছোট একটি হাফ-পাউন্ড বেন্টো কেক হোক বা কোনো প্রতিষ্ঠানের ৫০ পাউন্ডের বিশাল সেলিব্রেশন কেক—স্বাদ, স্বাস্থ্যবিধি এবং ফিনিশিংয়ে কোনো আপস করা হয় না।
+              </p>
+              <div class="pt-3 border-t border-borderwarm">
+                <p class="font-serif-bn font-bold text-espresso" data-editable="aboutFounderSignature">— আপনার বিশ্বস্ত বেকারি টিম, ডেলিশিয়াস বেকারি</p>
+                <p class="text-xs text-muted mt-0.5" data-editable="aboutHoursNote">প্রতিদিন সকাল ১০টা থেকে রাত ১০টা পর্যন্ত আপনার সেবায় নিয়োজিত</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Pillars (Why Choose Us & Capabilities) -->
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div class="p-6 rounded-2xl bg-alabaster border border-borderwarm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-espresso text-white flex items-center justify-center font-bold">০১</div>
+              <h3 class="font-serif-bn text-lg font-bold text-espresso">উন্নত ও আধুনিক বেকিং মেশিন</h3>
+              <p class="text-sm text-muted leading-relaxed">উন্নত কমার্শিয়াল ওভেন, মিক্সার ও চিলিং ইকুইপমেন্ট ব্যবহারের ফলে প্রতিটি কেকের স্পঞ্জ হয় তুলতুলে নরম এবং ক্রিম থাকে একদম ফ্রেশ।</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-alabaster border border-borderwarm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-espresso text-white flex items-center justify-center font-bold">০২</div>
+              <h3 class="font-serif-bn text-lg font-bold text-espresso">দক্ষ ও অভিজ্ঞ পেস্ট্রি কারিগর</h3>
+              <p class="text-sm text-muted leading-relaxed">আমাদের প্রশিক্ষিত কারিগররা ফনড্যান্ট আর্ট, প্রিন্টেড লোগো কেক, মাল্টি-টায়ার ওয়েডিং কেক এবং কাস্টম রাইটিংয়ে বিশেষভাবে পারদর্শী।</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-alabaster border border-borderwarm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-espresso text-white flex items-center justify-center font-bold">০৩</div>
+              <h3 class="font-serif-bn text-lg font-bold text-espresso">সকাল ১০টা – রাত ১০টা খোলা ও হোম ডেলিভারি</h3>
+              <p class="text-sm text-muted leading-relaxed">সপ্তাহের প্রতিদিন সকাল ১০টা থেকে রাত ১০টা পর্যন্ত শপ খোলা থাকে। ব্যস্ত থাকলে ঘরে বা অফিসে বসেই নিরাপদ হোম ডেলিভারি নিতে পারবেন।</p>
+            </div>
+            <div class="p-6 rounded-2xl bg-alabaster border border-borderwarm space-y-2">
+              <div class="w-10 h-10 rounded-xl bg-terracotta text-white flex items-center justify-center font-bold">০৪</div>
+              <h3 class="font-serif-bn text-lg font-bold text-espresso">সবার জন্য সাশ্রয়ী ছাড় (১৫% ও ২০%)</h3>
+              <p class="text-sm text-muted leading-relaxed">দোকানে এসে কাস্টম কেক রিসিভ করলে ১৫% ছাড় এবং যেকোনো ২ কেজি বা তার বেশি ওজনের কেকে পাচ্ছেন ফ্ল্যাট ২০% ছাড়!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SERVICES FOR ALL (Local Clients, Institutes, Event Management) -->
+    <section id="services" class="py-16 sm:py-20 border-b border-borderwarm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-10">
+          <span class="text-xs font-mono-en uppercase tracking-wider text-terracotta font-bold">CUSTOM CAKES FOR EVERYONE</span>
+          <h2 class="font-serif-bn text-2xl sm:text-4xl font-bold text-espresso mt-1">
+            কার জন্য কেমন কেক তৈরি করি আমরা?
+          </h2>
+          <p class="text-muted text-sm sm:text-base mt-2">
+            এলাকার প্রতিটি পরিবার থেকে শুরু করে যেকোনো শিক্ষাপ্রতিষ্ঠান, অফিস ও ইভেন্ট ম্যানেজমেন্ট—সবার চাহিদা অনুযায়ী আমরা কাস্টম অর্ডার তৈরি করি।
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Service 1 -->
+          <article class="bg-white rounded-2xl border border-borderwarm p-6 flex flex-col justify-between">
+            <div class="space-y-3">
+              <span class="inline-block px-3 py-1 rounded-full bg-stone-100 text-espresso text-xs font-bold">পরিবার ও স্থানীয় ক্রেতা</span>
+              <h3 class="font-serif-bn text-xl font-bold text-espresso">ঘরোয়া জন্মদিন, গায়ে হলুদ ও সারপ্রাইজ কেক</h3>
+              <p class="text-sm text-muted leading-relaxed">
+                বাচ্চাদের কার্টুন কেক, বাবা-মায়ের বিবাহবার্ষিকী কিংবা প্রিয়জনের জন্য মিনি বেন্টো কেক—আপনার বাজেট ও পছন্দের ফ্লেভারে তৈরি।
+              </p>
+              <ul class="text-xs text-espresso space-y-1.5 pt-2">
+                <li>✓ কম চিনি বা কাস্টম স্বাদের সুবিধা</li>
+                <li>✓ শপে এসে রিসিভ করলে ১৫% ছাড়</li>
+                <li>✓ দ্রুত হোম ডেলিভারি সুবিধা</li>
+              </ul>
+            </div>
+            <a href="#atelier" onclick="selectPresetInAtelier('বার্থডে / ফ্যামিলি সেলিব্রেশন', 1)" class="mt-6 inline-flex items-center justify-center w-full py-3 rounded-xl bg-alabaster hover:bg-espresso hover:text-white text-espresso font-semibold text-sm border border-borderwarm transition">
+              ফ্যামিলি কেক অর্ডার করুন →
+            </a>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="bg-white rounded-2xl border-2 border-terracotta p-6 flex flex-col justify-between relative">
+            <span class="absolute -top-3 right-4 px-3 py-0.5 rounded-full bg-terracotta text-white text-xs font-bold">২ কেজি+ কেকে ২০% ছাড়</span>
+            <div class="space-y-3">
+              <span class="inline-block px-3 py-1 rounded-full bg-amber-50 text-terracotta text-xs font-bold">সকল প্রতিষ্ঠান (Institute & Corporate)</span>
+              <h3 class="font-serif-bn text-xl font-bold text-espresso">স্কুল, কলেজ, ব্যাংক, হাসপাতাল ও অফিস</h3>
+              <p class="text-sm text-muted leading-relaxed">
+                প্রতিষ্ঠানের প্রতিষ্ঠাবার্ষিকী, বিদায় সংবর্ধনা, বার্ষিক অনুষ্ঠান বা জাতীয় দিবসের জন্য প্রতিষ্ঠানের লোগো ও নামসহ বড় আকারের কাস্টম কেক ও স্ন্যাকস বক্স।
+              </p>
+              <ul class="text-xs text-espresso space-y-1.5 pt-2">
+                <li>✓ প্রতিষ্ঠানের লোগো ও অফিশিয়াল কালার থিম</li>
+                <li>✓ ২ কেজি বা তার বেশি ওজনে ফ্ল্যাট ২০% ছাড়</li>
+                <li>✓ অফিশিয়াল ক্যাশ মেমো ও ঠিক সময়ে ডেলিভারি</li>
+              </ul>
+            </div>
+            <a href="#atelier" onclick="selectPresetInAtelier('স্কুল / কলেজ / প্রতিষ্ঠানের অনুষ্ঠান', 2)" class="mt-6 inline-flex items-center justify-center w-full py-3 rounded-xl bg-terracotta hover:bg-[#9e3c1d] text-white font-semibold text-sm transition">
+              প্রতিষ্ঠানের জন্য ২ কেজি+ কেক অর্ডার করুন →
+            </a>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="bg-white rounded-2xl border border-borderwarm p-6 flex flex-col justify-between">
+            <div class="space-y-3">
+              <span class="inline-block px-3 py-1 rounded-full bg-stone-100 text-espresso text-xs font-bold">ইভেন্ট ম্যানেজমেন্ট ও পার্টনার</span>
+              <h3 class="font-serif-bn text-xl font-bold text-espresso">ওয়েডিং, কর্পোরেট ইভেন্ট ও বাল্ক অর্ডার</h3>
+              <p class="text-sm text-muted leading-relaxed">
+                ইভেন্ট ম্যানেজমেন্ট টিমের জন্য স্টেজ থিমের সাথে মিলিয়ে ২–৩ তলা ওয়েডিং কেক, ভিআইপি গিফট হ্যাম্পার এবং অতিথিদের জন্য পেস্ট্রি বক্স।
+              </p>
+              <ul class="text-xs text-espresso space-y-1.5 pt-2">
+                <li>✓ রেফারেন্স ডিজাইন অনুযায়ী ১০০% নিখুঁত কাজ</li>
+                <li>✓ ইভেন্ট ভেন্যুতে সময়মতো সেটআপ ও ডেলিভারি</li>
+                <li>✓ নিয়মিত ইভেন্ট পার্টনারদের জন্য বিশেষ সুবিধা</li>
+              </ul>
+            </div>
+            <a href="#atelier" onclick="selectPresetInAtelier('ইভেন্ট ম্যানেজমেন্ট / ওয়েডিং স্টেজ', 3)" class="mt-6 inline-flex items-center justify-center w-full py-3 rounded-xl bg-alabaster hover:bg-espresso hover:text-white text-espresso font-semibold text-sm border border-borderwarm transition">
+              ইভেন্ট কেক কাস্টমাইজ করুন →
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: SPECIAL OFFERS BANNER -->
+    <section id="packages" class="py-12 bg-espresso text-white border-b border-stone-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-5 space-y-2">
+            <span class="text-xs font-mono-en uppercase tracking-wider text-amber-400 font-bold">EXCLUSIVE BAKERY OFFERS</span>
+            <h2 class="font-serif-bn text-2xl sm:text-3xl font-bold">আমাদের দুটি বিশেষ সাশ্রয়ী অফার</h2>
+            <p class="text-sm text-stone-300">কোনো গোপন শর্ত ছাড়াই সরাসরি আপনার বিলের ওপর ছাড় উপভোগ করুন। ক্যালকুলেটরে স্বয়ংক্রিয়ভাবে ছাড় হিসাব হয়ে যাবে।</p>
+          </div>
+          <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="p-5 rounded-2xl bg-stone-900 border border-stone-700 space-y-2">
+              <span class="inline-block px-3 py-1 rounded-full bg-terracotta text-white text-xs font-bold">অফার ১: ১৫% ছাড়</span>
+              <h3 class="font-serif-bn text-lg font-bold">দোকানে এসে কাস্টম কেক রিসিভ</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">আপনার অর্ডার করা কাস্টম কেকটি সকাল ১০টা থেকে রাত ১০টার মধ্যে সরাসরি আমাদের দোকান থেকে রিসিভ করলেই পাচ্ছেন ১৫% ফ্ল্যাট ডিসকাউন্ট এবং জিরো ডেলিভারি চার্জ!</p>
+              <button onclick="applyOfferPreset('pickup15')" class="mt-2 inline-block text-xs font-bold text-amber-400 hover:underline cursor-pointer">১৫% ছাড় অ্যাক্টিভ করুন →</button>
+            </div>
+            <div class="p-5 rounded-2xl bg-stone-900 border border-amber-400/50 space-y-2">
+              <span class="inline-block px-3 py-1 rounded-full bg-amber-400 text-espresso text-xs font-bold">অফার ২: ২০% ফ্ল্যাট ছাড়</span>
+              <h3 class="font-serif-bn text-lg font-bold">যেকোনো ২ কেজি কেকের অর্ডারে</h3>
+              <p class="text-xs text-stone-300 leading-relaxed">মেনুর যেকোনো কেক বা কাস্টম কেক ২ কেজি (অথবা তার বেশি) ওজনের অর্ডার করলেই হোম ডেলিভারি হোক বা শপ পিকআপ—পাচ্ছেন ফ্ল্যাট ২০% মেগা ডিসকাউন্ট!</p>
+              <button onclick="applyOfferPreset('cake2kg20')" class="mt-2 inline-block text-xs font-bold text-amber-400 hover:underline cursor-pointer">২ কেজি কেকে ২০% ছাড় দেখুন →</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: REGULAR BAKERY COLLECTION & DYNAMIC WEIGHT PRICING -->
+    <section id="collection" class="py-16 sm:py-20 border-b border-borderwarm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="text-xs font-mono-en uppercase tracking-wider text-terracotta font-bold">FRESH BAKERY MENU</span>
+            <h2 class="font-serif-bn text-2xl sm:text-4xl font-bold text-espresso mt-1">আমাদের জনপ্রিয় কেক ও বেকারি কালেকশন</h2>
+            <p class="text-sm sm:text-base text-muted mt-1">ওজন বাটনগুলোতে (`০.৫ কেজি`, `১ কেজি`, `২ কেজি - ২০% ছাড়`) ক্লিক করে তাৎক্ষণিক দাম দেখুন এবং অর্ডার ব্যাগে যোগ করুন।</p>
+          </div>
+
+          <!-- Category Filter Buttons -->
+          <div id="categoryFilterBar" class="flex flex-wrap gap-2">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CUSTOM CAKE ATELIER (Interactive Live Builder + 15% & 20% Calculator) -->
+    <section id="atelier" class="py-16 sm:py-20 bg-white border-b border-borderwarm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-10">
+          <span class="text-xs font-mono-en uppercase tracking-wider text-terracotta font-bold">CUSTOM CAKE STUDIO FOR ALL</span>
+          <h2 class="font-serif-bn text-2xl sm:text-4xl font-bold text-espresso mt-1">
+            আপনার মনের মতো কাস্টম কেক ডিজাইন ও প্রাইস ক্যালকুলেটর
+          </h2>
+          <p class="text-sm sm:text-base text-muted mt-2">
+            পরিবার, শিক্ষাপ্রতিষ্ঠান বা ইভেন্ট ম্যানেজমেন্ট—নিচের অপশনগুলো বেছে নিন। <strong>দোকানে রিসিভ করলে ১৫% ছাড়</strong> এবং <strong>২ কেজি+ ওজন নিলে ফ্ল্যাট ২০% ছাড়</strong> স্বয়ংক্রিয়ভাবে হিসাব হয়ে যাবে!
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          <!-- Builder Form (7 cols) -->
+          <div class="lg:col-span-7 bg-alabaster p-5 sm:p-8 rounded-3xl border border-borderwarm space-y-6">
+            
+            <!-- Step 1: Who is the order for? -->
+            <div>
+              <label for="customOccasion" class="block text-sm font-bold text-espresso mb-2">১. কার জন্য বা কোন আয়োজনের জন্য কেকটি প্রয়োজন?</label>
+              <select id="customOccasion" onchange="updateCustomCakeCalculator()" class="w-full p-3.5 rounded-xl bg-white border border-borderwarm text-sm font-medium text-espresso">
+                <option value="বার্থডে / ফ্যামিলি সেলিব্রেশন">ঘরোয়া জন্মদিন / বিবাহবার্ষিকী / ফ্যামিলি প্রোগ্রাম</option>
+                <option value="স্কুল / কলেজ / প্রতিষ্ঠানের অনুষ্ঠান">স্কুল, কলেজ, ব্যাংক বা প্রতিষ্ঠানের অনুষ্ঠান (Institute)</option>
+                <option value="ইভেন্ট ম্যানেজমেন্ট / ওয়েডিং স্টেজ">ইভেন্ট ম্যানেজমেন্ট / গায়ে হলুদ / ওয়েডিং রিসেপশন</option>
+                <option value="কর্পোরেট অফিস / উদ্বোধন">কর্পোরেট অফিস প্রোগ্রাম / শোরুম উদ্বোধন</option>
+              </select>
+            </div>
+
+            <!-- Step 2: Weight Selection (Highlights 2KG = 20% OFF) -->
+            <div>
+              <span class="block text-sm font-bold text-espresso mb-2">২. কেকের ওজন নির্বাচন করুন (২ কেজি বা তার বেশি নিলেই ফ্ল্যাট ২০% ছাড়!):</span>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5" id="customWeightButtons">
+                <button type="button" onclick="setCustomWeight(0.5)" data-weight="0.5" class="custom-weight-btn py-3 px-3 rounded-xl border border-borderwarm bg-white text-xs sm:text-sm font-semibold text-espresso cursor-pointer">
+                  ০.৫ কেজি (হাফ কেজি)
+                </button>
+                <button type="button" onclick="setCustomWeight(1)" data-weight="1" class="custom-weight-btn py-3 px-3 rounded-xl border border-borderwarm bg-white text-xs sm:text-sm font-semibold text-espresso cursor-pointer">
+                  ১ কেজি (রেগুলার)
+                </button>
+                <button type="button" onclick="setCustomWeight(2)" data-weight="2" class="custom-weight-btn py-3 px-3 rounded-xl border-2 border-terracotta bg-espresso text-white text-xs sm:text-sm font-semibold cursor-pointer relative">
+                  ২ কেজি ★ ২০% ছাড়
+                </button>
+                <button type="button" onclick="setCustomWeight(3)" data-weight="3" class="custom-weight-btn py-3 px-3 rounded-xl border border-borderwarm bg-white text-xs sm:text-sm font-semibold text-espresso cursor-pointer">
+                  ৩ কেজি ★ ২০% ছাড়
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Flavor Selection -->
+            <div>
+              <label for="customFlavor" class="block text-sm font-bold text-espresso mb-2">৩. আপনার পছন্দের ফ্লেভার বেছে নিন:</label>
+              <select id="customFlavor" onchange="updateCustomCakeCalculator()" class="w-full p-3.5 rounded-xl bg-white border border-borderwarm text-sm font-medium text-espresso">
+                <option value="বেলজিয়ান ডার্ক চকলেট ফাজ" data-rate="1300">বেলজিয়ান ডার্ক চকলেট ফাজ (প্রতি কেজি ৳১,৩০০)</option>
+                <option value="মাদাগাস্কার ভ্যানিলা ও বাটারস্কচ" data-rate="1100">মাদাগাস্কার ভ্যানিলা ও বাটারস্কচ (প্রতি কেজি ৳১,১০০)</option>
+                <option value="ক্লাসিক রেড ভেলভেট ক্রিম চিজ" data-rate="1400">ক্লাসিক রেড ভেলভেট ক্রিম চিজ (প্রতি কেজি ৳১,৪০০)</option>
+                <option value="প্রিমিয়াম রসমালাই ও পেস্তা ফিউশন" data-rate="1450">প্রিমিয়াম রসমালাই ও পেস্তা ফিউশন (প্রতি কেজি ৳১,৪৫০)</option>
+                <option value="ব্ল্যাক ফরেস্ট চেরি কম্পোট" data-rate="1200">ব্ল্যাক ফরেস্ট চেরি কম্পোট (প্রতি কেজি ৳১,২০০)</option>
+              </select>
+            </div>
+
+            <!-- Step 4: Receiving Method (Shop Pickup 15% OFF vs Home Delivery) -->
+            <div>
+              <span class="block text-sm font-bold text-espresso mb-2">৪. কেকটি কীভাবে রিসিভ করতে চান?</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <button type="button" id="studioPickupBtn" onclick="setReceivingMode('pickup')" class="p-4 rounded-2xl border-2 border-terracotta bg-amber-50/70 text-left transition cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-sm text-espresso">🏪 দোকানে এসে রিসিভ করব</span>
+                    <span class="px-2 py-0.5 rounded-full bg-terracotta text-white text-[11px] font-bold">১৫% ছাড়</span>
+                  </div>
+                  <p class="text-xs text-muted mt-1">সকাল ১০টা – রাত ১০টার মধ্যে শপ থেকে রিসিভ (ডেলিভারি চার্জ ফ্রি)</p>
+                </button>
+                <button type="button" id="studioDeliveryBtn" onclick="setReceivingMode('delivery')" class="p-4 rounded-2xl border border-borderwarm bg-white text-left transition cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <span class="font-bold text-sm text-espresso">🚚 হোম বা ইভেন্ট ডেলিভারি চাই</span>
+                    <span class="px-2 py-0.5 rounded-full bg-stone-200 text-espresso text-[11px] font-semibold">হোম ডেলিভারি</span>
+                  </div>
+                  <p class="text-xs text-muted mt-1">বাসা, অফিস বা অনুষ্ঠানে আমাদের নিজস্ব তত্ত্বাবধানে ডেলিভারি</p>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 5: Message on Cake & Special Instructions -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="customCakeMessage" class="block text-sm font-bold text-espresso mb-1.5">৫. কেকের ওপর কী লেখা থাকবে?</label>
+                <input id="customCakeMessage" type="text" oninput="updateCustomCakeCalculator()" placeholder="যেমন: শুভ জন্মদিন তানহা / বার্ষিকী ২০২৬" class="w-full p-3 rounded-xl bg-white border border-borderwarm text-sm" />
+              </div>
+              <div>
+                <label for="customCakeDate" class="block text-sm font-bold text-espresso mb-1.5">৬. কবে এবং কখন প্রয়োজন?</label>
+                <input id="customCakeDate" type="date" onchange="updateCustomCakeCalculator()" class="w-full p-3 rounded-xl bg-white border border-borderwarm text-sm" />
+              </div>
+            </div>
+
+            <div>
+              <label for="customCakeNotes" class="block text-sm font-bold text-espresso mb-1.5">৭. ডিজাইন, প্রতিষ্ঠানের লোগো বা বিশেষ নির্দেশনা (যদি থাকে):</label>
+              <textarea id="customCakeNotes" rows="2" placeholder="যেমন: কম মিষ্টি হবে, নীল-সাদা থিম, অথবা আমাদের স্কুলের নাম ও লোগো থাকবে..." class="w-full p-3 rounded-xl bg-white border border-borderwarm text-sm"></textarea>
+            </div>
+          </div>
+
+          <!-- Live Specification & Discount Receipt Aside (5 cols) -->
+          <aside class="lg:col-span-5 bg-espresso text-white p-6 sm:p-8 rounded-3xl space-y-5 lg:sticky lg:top-28" aria-live="polite">
+            <div class="flex items-center justify-between border-b border-stone-800 pb-4">
+              <div>
+                <span class="text-xs font-mono-en uppercase tracking-wider text-amber-400">LIVE CUSTOM RECEIPT</span>
+                <h3 class="font-serif-bn text-xl font-bold mt-0.5">আপনার কাস্টম কেক বিবরণী</h3>
+              </div>
+              <span id="studioDiscountBadge" class="px-3 py-1 rounded-full bg-amber-400 text-espresso text-xs font-bold">২০% মেগা ছাড় চালু!</span>
+            </div>
+
+            <div class="space-y-2.5 text-sm">
+              <div class="flex justify-between py-1.5 border-b border-stone-800">
+                <span class="text-stone-400">আয়োজনের ধরন:</span>
+                <span id="summaryOccasion" class="font-semibold text-right">বার্থডে / ফ্যামিলি সেলিব্রেশন</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-stone-800">
+                <span class="text-stone-400">নির্বাচিত ওজন:</span>
+                <span id="summaryWeight" class="font-semibold">২ কেজি</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-stone-800">
+                <span class="text-stone-400">ফ্লেভার:</span>
+                <span id="summaryFlavor" class="font-semibold text-right">বেলজিয়ান ডার্ক চকলেট ফাজ</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-stone-800">
+                <span class="text-stone-400">রিসিভ করার মাধ্যম:</span>
+                <span id="summaryMode" class="font-semibold text-amber-300">দোকানে এসে রিসিভ (শপ পিকআপ)</span>
+              </div>
+              <div class="flex justify-between py-1.5 border-b border-stone-800">
+                <span class="text-stone-400">কেকের ওপরের লেখা:</span>
+                <span id="summaryMessage" class="font-semibold text-right italic">“শুভ জন্মদিন!”</span>
+              </div>
+            </div>
+
+            <!-- Price Calculation Box -->
+            <div class="bg-stone-900 p-4 rounded-2xl border border-stone-800 space-y-2">
+              <div class="flex justify-between text-xs text-stone-400">
+                <span>রেগুলার মূল্য:</span>
+                <span id="summaryRegularPrice" class="line-through">৳২,৬০০</span>
+              </div>
+              <div class="flex justify-between text-xs text-emerald-400 font-semibold">
+                <span id="summaryDiscountReason">২ কেজি স্পেশাল ফ্ল্যাট ২০% ছাড়:</span>
+                <span id="summaryDiscountAmount">- ৳৫২০</span>
+              </div>
+              <div class="flex justify-between items-baseline pt-2 border-t border-stone-800">
+                <span class="font-serif-bn text-base font-bold">ছাড়ের পর সর্বমোট:</span>
+                <span id="summaryFinalPrice" class="font-serif-bn text-2xl sm:text-3xl font-bold text-amber-400">৳২,০৮০</span>
+              </div>
+            </div>
+
+            <button type="button" onclick="addCustomCakeToCart()" class="w-full py-4 rounded-xl bg-terracotta hover:bg-[#9e3c1d] text-white font-bold text-base transition cursor-pointer shadow-md">
+              + এই কাস্টম কেকটি অর্ডার ব্যাগে যোগ করুন
+            </button>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: HOW IT WORKS (4 Easy Steps) -->
+    <section id="how-it-works" class="py-16 sm:py-20 border-b border-borderwarm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+          <span class="text-xs font-mono-en uppercase tracking-wider text-terracotta font-bold">SIMPLE 4-STEP ORDERING</span>
+          <h2 class="font-serif-bn text-2xl sm:text-4xl font-bold text-espresso mt-1">কীভাবে খুব সহজে অর্ডার করবেন?</h2>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white p-6 rounded-2xl border border-borderwarm space-y-2">
+            <span class="text-xs font-bold text-terracotta">ধাপ ১</span>
+            <h3 class="font-serif-bn text-lg font-bold text-espresso">কেক ও ওজন পছন্দ করুন</h3>
+            <p class="text-sm text-muted">রেগুলার মেনু অথবা কাস্টম কেক স্টুডিও থেকে আপনার পছন্দের ফ্লেভার, ওজন ও লেখা নির্বাচন করুন।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-borderwarm space-y-2">
+            <span class="text-xs font-bold text-terracotta">ধাপ ২</span>
+            <h3 class="font-serif-bn text-lg font-bold text-espresso">১৫% বা ২০% ছাড় বুঝে নিন</h3>
+            <p class="text-sm text-muted">দোকানে রিসিভ করলে ১৫% ছাড় এবং ২ কেজি বা তার বেশি ওজনের কেকে স্বয়ংক্রিয়ভাবে ২০% ছাড় যুক্ত হবে।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-borderwarm space-y-2">
+            <span class="text-xs font-bold text-terracotta">ধাপ ৩</span>
+            <h3 class="font-serif-bn text-lg font-bold text-espresso">উন্নত কিচেনে ফ্রেশ বেকিং</h3>
+            <p class="text-sm text-muted">আমাদের দক্ষ কারিগররা আধুনিক মেশিনে আপনার ডেলিভারির ঠিক আগে কেকটি ফ্রেশ বেক ও ডেকোরেশন করবেন।</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-borderwarm space-y-2">
+            <span class="text-xs font-bold text-terracotta">ধাপ ৪</span>
+            <h3 class="font-serif-bn text-lg font-bold text-espresso">শপ পিকআপ বা হোম ডেলিভারি</h3>
+            <p class="text-sm text-muted">সকাল ১০টা–রাত ১০টার মধ্যে দোকান থেকে রিসিভ করুন অথবা ঘরে/অনুষ্ঠানে বসে নিরাপদে হোম ডেলিভারি নিন।</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: HONEST CUSTOMER EXPERIENCES (Editable Placeholders, Never Fake) -->
+    <section id="experiences" class="py-16 sm:py-20 bg-white border-b border-borderwarm">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="text-xs font-mono-en uppercase tracking-wider text-terracotta font-bold">VERIFIED CLIENT FEEDBACK SLOT</span>
+            <h2 class="font-serif-bn text-2xl sm:text-4xl font-bold text-espresso mt-1">ক্রেতা ও প্রতিষ্ঠানের মতামত (এডিটযোগ্য স্লট)</h2>
+            <p class="text-sm text-muted mt-1">আমরা কোনো কাল্পনিক রিভিউ ব্যবহার করি না। উপরের <strong>“তথ্য এডিট মোড”</strong> অন করে আপনার আসল ক্রেতাদের মতামত এখানে যুক্ত করুন।</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="p-6 rounded-2xl bg-alabaster border border-dashed border-stone-400 space-y-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-terracotta text-xs font-bold">রিভিউ স্লট ১ (স্থানীয় পরিবার)</span>
+            <p class="text-sm text-espresso leading-relaxed italic" data-editable="review1Text">
+              “[এখানে আপনার এলাকার একজন নিয়মিত ক্রেতার আসল মতামত লিখুন—যেমন ২ কেজি বার্থডে কেকের স্বাদ ও ডেলিভারি সময় নিয়ে তাঁর অভিজ্ঞতা।]”
+            </p>
+            <p class="text-xs font-bold text-muted" data-editable="review1Author">— [ক্রেতার নাম ও এলাকা লিখুন]</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-alabaster border border-dashed border-stone-400 space-y-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-terracotta text-xs font-bold">রিভিউ স্লট ২ (স্কুল/কলেজ/প্রতিষ্ঠান)</span>
+            <p class="text-sm text-espresso leading-relaxed italic" data-editable="review2Text">
+              “[এখানে কোনো স্কুল, কলেজ বা ব্যাংকের অনুষ্ঠানের জন্য তৈরি কাস্টম লোগো কেকের ব্যাপারে তাঁদের প্রকৃত মন্তব্য যুক্ত করুন।]”
+            </p>
+            <p class="text-xs font-bold text-muted" data-editable="review2Author">— [প্রতিষ্ঠানের নাম ও দায়িত্বশীল ব্যক্তির পদবি]</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-alabaster border border-dashed border-stone-400 space-y-3">
+            <span class="px-2.5 py-0.5 rounded-full bg-amber-100 text-terracotta text-xs font-bold">রিভিউ স্লট ৩ (ইভেন্ট ম্যানেজমেন্ট)</span>
+            <p class="text-sm text-espresso leading-relaxed italic" data-editable="review3Text">
+              “[এখানে আপনার সাথে কাজ করা কোনো ইভেন্ট ম্যানেজমেন্ট বা ওয়েডিং ক্লায়েন্টের প্রকৃত ফিডব্যাক যুক্ত করুন।]”
+            </p>
+            <p class="text-xs font-bold text-muted" data-editable="review3Author">— [ইভেন্ট অর্গানাইজার বা ক্লায়েন্টের নাম]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: FREQUENTLY ASKED QUESTIONS (FAQ) -->
+    <section id="faq" class="py-16 sm:py-20 border-b border-borderwarm">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <span class="text-xs font-mono-en uppercase tracking-wider text-terracotta font-bold">COMMON QUESTIONS</span>
+          <h2 class="font-serif-bn text-2xl sm:text-4xl font-bold text-espresso mt-1">সচরাচর জিজ্ঞাসিত প্রশ্নোত্তর (FAQ)</h2>
+        </div>
+
+        <div class="space-y-3" id="faqContainer">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: CONTACT & FOOTER -->
+    <footer id="contact" class="bg-espresso text-[#FAF8F5] pt-16 pb-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 pb-12 border-b border-stone-800">
+          
+          <!-- Col 1: Brand & Hours -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-terracotta text-white flex items-center justify-center font-serif-bn text-xl font-bold">ড</div>
+              <span class="font-serif-bn text-2xl font-bold text-white" data-editable="footerBrandName">ডেলিশিয়াস বেকারি</span>
+            </div>
+            <p class="text-sm text-stone-300 leading-relaxed max-w-md" data-editable="footerSummary">
+              উন্নত মেশিনে সজ্জিত কিচেন ও দক্ষ কারিগরের ছোঁয়ায় প্রতিদিন সকাল ১০টা থেকে রাত ১০টা পর্যন্ত আমরা তৈরি করছি কাস্টম কেক ও ফ্রেশ বেকারি আইটেম।
+            </p>
+            <div class="inline-block p-4 rounded-2xl bg-stone-900 border border-stone-800 space-y-1 text-xs sm:text-sm">
+              <p class="text-amber-400 font-bold">🕒 প্রতিদিন খোলা: সকাল ১০:০০টা – রাত ১০:০০টা</p>
+              <p class="text-stone-300">📍 ঠিকানা: <span data-editable="shopAddress">[আপনার দোকানের রোড, এলাকা ও শহরের নাম এখানে লিখুন]</span></p>
+              <p class="text-stone-300">📞 ফোন / হোয়াটসঅ্যাপ: <span data-editable="shopPhone">+8801700000000</span></p>
+            </div>
+          </div>
+
+          <!-- Col 2: Quick Links -->
+          <div class="lg:col-span-3 space-y-3 text-sm">
+            <h3 class="font-serif-bn text-lg font-bold text-white">দ্রুত লিংক</h3>
+            <ul class="space-y-2 text-stone-300">
+              <li><a href="#about" class="hover:text-amber-400">আমাদের কিচেন ও গল্প</a></li>
+              <li><a href="#services" class="hover:text-amber-400">স্কুল, কলেজ ও ইভেন্ট কেক</a></li>
+              <li><a href="#collection" class="hover:text-amber-400">বেকারি মেনু ও প্রাইস লিস্ট</a></li>
+              <li><a href="#atelier" class="hover:text-amber-400">কাস্টম কেক ক্যালকুলেটর</a></li>
+              <li><a href="#faq" class="hover:text-amber-400">প্রশ্নোত্তর (১৫% ও ২০% ছাড়)</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Instant Callback / Bulk Inquiry Form -->
+          <div class="lg:col-span-4 bg-stone-900 p-6 rounded-2xl border border-stone-800 space-y-4">
+            <h3 class="font-serif-bn text-lg font-bold text-white">ইভেন্ট বা কাস্টম অর্ডারের জন্য কথা বলুন</h3>
+            <p class="text-xs text-stone-300">আপনার নাম ও নম্বর দিন অথবা সরাসরি হোয়াটসঅ্যাপে আপনার পছন্দের কেকের ছবি পাঠিয়ে দিন।</p>
+            <form onsubmit="handleQuickContact(event)" class="space-y-3">
+              <div>
+                <label for="contactName" class="sr-only">আপনার নাম</label>
+                <input id="contactName" type="text" required placeholder="আপনার নাম বা প্রতিষ্ঠানের নাম" class="w-full p-3 rounded-xl bg-stone-950 border border-stone-700 text-sm text-white" />
+              </div>
+              <div>
+                <label for="contactPhone" class="sr-only">মোবাইল নম্বর</label>
+                <input id="contactPhone" type="tel" required placeholder="আপনার মোবাইল নম্বর" class="w-full p-3 rounded-xl bg-stone-950 border border-stone-700 text-sm text-white" />
+              </div>
+              <button type="submit" class="w-full py-3 rounded-xl bg-terracotta hover:bg-[#9e3c1d] text-white font-bold text-sm transition cursor-pointer">
+                হোয়াটসঅ্যাপে মেসেজ পাঠান →
+              </button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
+          <p>© ২০২৬ ডেলিশিয়াস বেকারি। সর্বস্বত্ব সংরক্ষিত।</p>
+          <p data-editable="licensePlaceholder">ট্রেড লাইসেন্স ও বিএসটিআই অনুমোদন নম্বর: [আপনার লাইসেন্স নম্বর এখানে লিখুন]</p>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- SLIDE-OVER CART & CHECKOUT DRAWER -->
+  <div id="cartDrawerBackdrop" onclick="toggleCartDrawer(false)" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden"></div>
+  <aside id="cartDrawer" role="dialog" aria-modal="true" aria-label="অর্ডার ব্যাগ" class="fixed top-0 right-0 h-full w-full max-w-md bg-white z-50 shadow-2xl border-l border-borderwarm flex flex-col translate-x-full transition-transform duration-300">
+    <!-- Drawer Header -->
+    <div class="p-5 border-b border-borderwarm flex items-center justify-between bg-alabaster">
+      <div>
+        <h2 class="font-serif-bn text-xl font-bold text-espresso">আপনার অর্ডার ব্যাগ</h2>
+        <p class="text-xs text-muted">১৫% শপ পিকআপ ও ২০% (২ কেজি+) ছাড় স্বয়ংক্রিয়ভাবে হিসাব করা হয়েছে</p>
+      </div>
+      <button onclick="toggleCartDrawer(false)" class="p-2 rounded-lg border border-borderwarm bg-white hover:bg-stone-100 text-sm font-bold cursor-pointer" aria-label="বন্ধ করুন">✕</button>
+    </div>
+
+    <!-- Receiving Mode Switch inside Cart -->
+    <div class="p-3.5 bg-amber-50/70 border-b border-borderwarm grid grid-cols-2 gap-2">
+      <button type="button" id="cartPickupBtn" onclick="setReceivingMode('pickup')" class="py-2 px-3 rounded-xl text-xs font-bold border cursor-pointer">
+        🏪 শপ পিকআপ (১৫% ছাড়)
+      </button>
+      <button type="button" id="cartDeliveryBtn" onclick="setReceivingMode('delivery')" class="py-2 px-3 rounded-xl text-xs font-bold border cursor-pointer">
+        🚚 হোম ডেলিভারি (৳৬০)
+      </button>
+    </div>
+
+    <!-- Cart Items Container -->
+    <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-5 space-y-4">
+      <!-- Rendered by JS -->
+    </div>
+
+    <!-- Checkout Form & Total Footer -->
+    <div id="cartFooter" class="p-5 border-t border-borderwarm bg-alabaster space-y-4">
+      <div class="space-y-1.5 text-sm">
+        <div class="flex justify-between text-muted">
+          <span>সাব-টোটাল (রেগুলার):</span>
+          <span id="cartSubtotal">৳০</span>
+        </div>
+        <div class="flex justify-between text-emerald-700 font-semibold">
+          <span id="cartDiscountLabel">বিশেষ ছাড় (১৫% / ২০%):</span>
+          <span id="cartDiscountValue">- ৳০</span>
+        </div>
+        <div class="flex justify-between text-muted">
+          <span>ডেলিভারি চার্জ:</span>
+          <span id="cartDeliveryFee">ফ্রি (শপ পিকআপ)</span>
+        </div>
+        <div class="flex justify-between text-lg font-serif-bn font-bold text-espresso pt-2 border-t border-borderwarm">
+          <span>সর্বমোট প্রদেয় বিল:</span>
+          <span id="cartGrandTotal" class="text-terracotta">৳০</span>
+        </div>
+      </div>
+
+      <form id="checkoutForm" onsubmit="submitFinalOrder(event)" class="space-y-2.5">
+        <input id="custName" type="text" required placeholder="আপনার নাম *" class="w-full p-2.5 rounded-xl bg-white border border-borderwarm text-sm" />
+        <input id="custPhone" type="tel" required placeholder="মোবাইল নম্বর (০১XXXXXXXXX) *" class="w-full p-2.5 rounded-xl bg-white border border-borderwarm text-sm" />
+        <input id="custAddress" type="text" placeholder="ঠিকানা (হোম ডেলিভারির ক্ষেত্রে) বা পিকআপ সময়" class="w-full p-2.5 rounded-xl bg-white border border-borderwarm text-sm" />
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-terracotta hover:bg-[#9e3c1d] text-white font-bold text-sm transition cursor-pointer shadow-sm">
+          অর্ডার কনফার্ম করুন →
+        </button>
+      </form>
+    </div>
+  </aside>
+
+  <!-- ORDER CONFIRMATION & WHATSAPP RECEIPT MODAL -->
+  <div id="orderSuccessModal" role="dialog" aria-modal="true" class="fixed inset-0 bg-black/70 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 border border-borderwarm shadow-2xl space-y-5 text-center">
+      <div class="w-14 h-14 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mx-auto font-bold">✓</div>
+      <h3 class="font-serif-bn text-2xl font-bold text-espresso">অর্ডার রিকোয়েস্ট তৈরি হয়েছে!</h3>
+      <p id="orderSuccessSummary" class="text-sm text-muted leading-relaxed"></p>
+      <div class="flex flex-col gap-2.5 pt-2">
+        <a id="whatsappOrderLink" href="#" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm transition">
+          💬 হোয়াটসঅ্যাপে অর্ডার রিসিট পাঠান
+        </a>
+        <button onclick="closeOrderModal()" class="w-full py-3 rounded-xl bg-stone-100 hover:bg-stone-200 text-espresso font-semibold text-sm cursor-pointer">
+          ওয়েবসাইটে ফিরে যান
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div id="toastNotification" aria-live="polite" class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden bg-espresso text-white px-5 py-3 rounded-2xl shadow-xl border border-stone-700 text-xs sm:text-sm font-medium">
+    আইটেমটি অর্ডার ব্যাগে যোগ করা হয়েছে!
+  </div>
+
+  <!-- COMPLETE APPLICATION JAVASCRIPT -->
+  <script>
+    // 1. Bengali Numeral Converter
+    const enToBnDigits = { '0':'০','1':'১','2':'২','3':'৩','4':'৪','5':'৫','6':'৬','7':'৭','8':'৮','9':'৯','.':'.' };
+    function toBn(num) {
+      return String(num).replace(/[0-9.]/g, d => enToBnDigits[d] || d);
+    }
+    function formatBdt(amount) {
+      return '৳' + toBn(Math.round(amount).toLocaleString('en-IN'));
+    }
+
+    // 2. Hero Showcase Data
+    const HERO_SHOWCASES = {
+      family: {
+        badge: 'স্থানীয় পরিবার ও রেগুলার ক্লায়েন্ট',
+        title: 'থিম বার্থডে ও অ্যানিভার্সারি কাস্টম কেক',
+        offer: '১৫%–২০% ছাড়',
+        desc: 'বাচ্চার পছন্দের কার্টুন থিম, গায়ে হলুদ বা বিবাহবার্ষিকীর যেকোনো রেফারেন্স ছবি আমাদের দিন। কম মিষ্টি বা স্পেশাল ফ্লেভার—যেমনটা চাইবেন, ঠিক তেমনটাই তৈরি করে দেওয়া হবে।',
+        turnaround: '⏱️ প্রস্তুতি সময়: একই দিনে / ২৪ ঘণ্টা আগে',
+        img: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80'
+      },
+      institute: {
+        badge: 'স্কুল, কলেজ, ব্যাংক ও সকল প্রতিষ্ঠান',
+        title: 'প্রতিষ্ঠানের লোগো ও বড় সেলিব্রেশন কেক',
+        offer: '২ কেজি+ ২০% ছাড়',
+        desc: 'স্কুল-কলেজের নবীনবরণ, বিদায় সংবর্ধনা, ব্যাংক বা অফিসের প্রতিষ্ঠাবার্ষিকীর জন্য ২ কেজি থেকে ২০ কেজি+ ওজনের কাস্টম কেক ও স্ন্যাকস বক্স নিখুঁত মানে তৈরি করা হয়।',
+        turnaround: '⏱️ ২ কেজি বা তার বেশি ওজনে ফ্ল্যাট ২০% ছাড়!',
+        img: 'https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=900&q=80'
+      },
+      event: {
+        badge: 'ইভেন্ট ম্যানেজমেন্ট ও ওয়েডিং প্ল্যানার',
+        title: 'মাল্টি-টায়ার স্টেজ কেক ও ডেজার্ট টেবিল',
+        offer: 'ভেন্যু ডেলিভারি',
+        desc: 'ইভেন্ট ম্যানেজমেন্ট কোম্পানির যেকোনো কাস্টম ডিজাইন, স্টেজ কালার প্যালেট ও ভিআইপি গিফট বক্স আমাদের আধুনিক মেশিনে সজ্জিত কিচেনে ঠিক সময়ে প্রস্তুত করা হয়।',
+        turnaround: '⏱️ সরাসরি ইভেন্ট ভেন্যুতে নিরাপদ ডেলিভারি',
+        img: 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80'
+      }
+    };
+
+    // 3. Bakery Products Data
+    const PRODUCTS = [
+      {
+        id: 'p1',
+        name: 'বেলজিয়ান ডার্ক চকলেট ফাজ কেক',
+        category: 'সিগনেচার কেক',
+        basePricePerKg: 1300,
+        isCustomCake: true,
+        weights: [0.5, 1, 2],
+        defaultWeight: 1,
+        desc: 'খাঁটি ডার্ক চকলেট গানাশ ও নরম চকলেট স্পঞ্জ। ২ কেজি নিলেই ফ্ল্যাট ২০% ছাড়!',
+        img: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p2',
+        name: 'ক্লাসিক রেড ভেলভেট ক্রিম চিজ',
+        category: 'সিগনেচার কেক',
+        basePricePerKg: 1400,
+        isCustomCake: true,
+        weights: [0.5, 1, 2],
+        defaultWeight: 1,
+        desc: 'মখমলের মতো নরম রেড ভেলভেট লেয়ার ও আসল ক্রিম চিজ ফ্রস্টিং।',
+        img: 'https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p3',
+        name: 'রয়্যাল রসমালাই ও পেস্তা ফিউশন কেক',
+        category: 'কাস্টম স্পেশাল',
+        basePricePerKg: 1450,
+        isCustomCake: true,
+        weights: [0.5, 1, 2],
+        defaultWeight: 2,
+        desc: 'দেশীয় রসমালাই, জাফরান ও কাঠবাদাম-পেস্তা কুচির রাজকীয় ফিউশন কেক।',
+        img: 'https://images.unsplash.com/photo-1621303837174-89787a7d4729?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p4',
+        name: 'কোরিয়ান মিনিমালিস্ট বেন্টো কেক',
+        category: 'কাস্টম স্পেশাল',
+        basePricePerKg: 1200,
+        isCustomCake: true,
+        weights: [0.5, 1, 2],
+        defaultWeight: 0.5,
+        desc: 'প্রিয়জনকে সারপ্রাইজ দিতে আপনার পছন্দের রঙ ও ছোট মেসেজসহ বেন্টো কেক।',
+        img: 'https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p5',
+        name: 'মাদাগাস্কার ভ্যানিলা ও বাটারস্কচ ক্রাঞ্চ',
+        category: 'সিগনেচার কেক',
+        basePricePerKg: 1100,
+        isCustomCake: true,
+        weights: [0.5, 1, 2],
+        defaultWeight: 1,
+        desc: 'হোমমেড বাটারস্কচ প্র্যালাইন ও নরম ভ্যানিলা স্পঞ্জ—পরিবার ও প্রতিষ্ঠানের প্রিয়।',
+        img: 'https://images.unsplash.com/photo-1535141192574-5d4897c12636?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p6',
+        name: 'ইনস্টিটিউট ও কর্পোরেট সেলিব্রেশন কেক',
+        category: 'ইভেন্ট ও প্রতিষ্ঠান',
+        basePricePerKg: 1250,
+        isCustomCake: true,
+        weights: [1, 2, 3],
+        defaultWeight: 2,
+        desc: 'স্কুল, কলেজ, ব্যাংক ও অফিসের লোগো এবং নামসহ বড় সেলিব্রেশন কেক (২ কেজি+ ২০% ছাড়)।',
+        img: 'https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p7',
+        name: 'ফ্রেঞ্চ বাটার ক্রসোঁ ও পেস্ট্রি বক্স (৬ পিস)',
+        category: 'পেস্ট্রি ও স্ন্যাকস',
+        basePricePerKg: 750,
+        isCustomCake: false,
+        weights: [1],
+        defaultWeight: 1,
+        desc: 'ইভেন্ট, অফিস মিটিং বা বিকেলের চায়ের আড্ডার জন্য ফ্রেশ বেকড বাটার ক্রসোঁ বক্স।',
+        img: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80'
+      },
+      {
+        id: 'p8',
+        name: 'বেলজিয়ান ফাজ ব্রাউনি গিফট বক্স (৯ পিস)',
+        category: 'পেস্ট্রি ও স্ন্যাকস',
+        basePricePerKg: 850,
+        isCustomCake: false,
+        weights: [1],
+        defaultWeight: 1,
+        desc: 'উপহার বা ঘরোয়া পার্টির জন্য চকলেট ওয়ালনাট ফাজ ব্রাউনি অ্যাসর্টেড বক্স।',
+        img: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=700&q=80'
+      }
+    ];
+
+    // 4. FAQ Data
+    const FAQS = [
+      {
+        q: 'দোকানে এসে কাস্টম কেক রিসিভ করলে ১৫% ছাড় এবং ২ কেজি কেকে ২০% ছাড় কীভাবে পাব?',
+        a: 'খুব সহজ! আপনি যখন আমাদের ওয়েবসাইটে যেকোনো ২ কেজি (বা তার বেশি) ওজনের কেক সিলেক্ট করবেন, তখন স্বয়ংক্রিয়ভাবে ফ্ল্যাট ২০% ছাড় হিসাব হবে। আর ২ কেজির কম ওজনের যেকোনো কাস্টম কেক দোকানে এসে রিসিভ (Shop Pickup) সিলেক্ট করলেই ১৫% ছাড় পেয়ে যাবেন।'
+      },
+      {
+        q: 'আপনাদের দোকান কখন খোলা থাকে এবং হোম ডেলিভারি কীভাবে হয়?',
+        a: 'আমাদের বেকারি প্রতিদিন সকাল ১০:০০টা থেকে রাত ১০:০০টা পর্যন্ত খোলা থাকে। আপনি চাইলে দোকানে এসে কেক নিতে পারেন, অথবা আপনার বাসা, অফিস বা ইভেন্ট ভেন্যুতে আমাদের নিজস্ব ডেলিভারি টিমের মাধ্যমে হোম ডেলিভারি নিতে পারেন।'
+      },
+      {
+        q: 'স্কুল, কলেজ, ব্যাংক বা ইভেন্ট ম্যানেজমেন্টের বড় অর্ডার কতক্ষণ আগে দিতে হয়?',
+        a: '১–২ কেজির রেগুলার কাস্টম কেক আমরা একই দিনে (৪–৫ ঘণ্টা আগে অর্ডার করলে) দিতে পারি। তবে স্কুল, কলেজ, প্রতিষ্ঠান বা ইভেন্ট ম্যানেজমেন্টের বড় বা মাল্টি-টায়ার কেকের জন্য অন্তত ১ দিন আগে অর্ডার করলে আমরা সবচেয়ে নিখুঁত ফিনিশিং দিতে পারি।'
+      },
+      {
+        q: 'ছবি বা রেফারেন্স ডিজাইন দিলে কি হুবহু তেমন কেক বানিয়ে দেওয়া যাবে?',
+        a: 'জি, অবশ্যই! আমাদের কিচেন আধুনিক বেকিং মেশিনে সজ্জিত এবং আমাদের কারিগররা অত্যন্ত দক্ষ। আপনার যেকোনো রেফারেন্স ছবি হোয়াটসঅ্যাপে পাঠিয়ে দিলে আমরা সেই অনুযায়ী কাস্টম কেক তৈরি করে দেব।'
+      }
+    ];
+
+    // 5. Application State
+    let selectedCategory = 'সবগুলো';
+    let selectedWeights = {};
+    PRODUCTS.forEach(p => { selectedWeights[p.id] = p.defaultWeight; });
+
+    let receivingMode = 'pickup'; // 'pickup' (15% off custom cakes) or 'delivery'
+    let customWeight = 2; // Default 2kg to demonstrate 20% off
+    let editMode = false;
+    let cart = [];
+
+    // Load saved state from localStorage
+    try {
+      const savedCart = localStorage.getItem('db_html_cart_v1');
+      if (savedCart) cart = JSON.parse(savedCart);
+      const savedEdits = localStorage.getItem('db_html_edits_v1');
+      if (savedEdits) {
+        const editsObj = JSON.parse(savedEdits);
+        window.addEventListener('DOMContentLoaded', () => {
+          Object.keys(editsObj).forEach(key => {
+            const el = document.querySelector(`[data-editable="${key}"]`);
+            if (el) el.textContent = editsObj[key];
+          });
+        });
+      }
+    } catch (e) {}
+
+    // 6. Hero Showcase Switcher
+    function switchHeroShowcase(key) {
+      const data = HERO_SHOWCASES[key];
+      if (!data) return;
+      document.getElementById('heroShowcaseImg').src = data.img;
+      document.getElementById('heroShowcaseBadge').textContent = data.badge;
+      document.getElementById('heroShowcaseTitle').textContent = data.title;
+      document.getElementById('heroShowcaseOfferTag').textContent = data.offer;
+      document.getElementById('heroShowcaseDesc').textContent = data.desc;
+      document.getElementById('heroShowcaseTurnaround').textContent = data.turnaround;
+
+      ['family', 'institute', 'event'].forEach(k => {
+        const btn = document.getElementById('heroTab-' + k);
+        if (k === key) {
+          btn.className = 'hero-tab py-2 px-3 rounded-lg text-xs font-semibold bg-espresso text-white transition cursor-pointer';
+        } else {
+          btn.className = 'hero-tab py-2 px-3 rounded-lg text-xs font-semibold text-espresso hover:bg-stone-200/60 transition cursor-pointer';
+        }
+      });
+    }
+
+    // 7. Discount Calculation Helper per Item
+    function calculateItemPricing(basePricePerKg, weight, isCustomCake, mode) {
+      const rawPrice = Math.round(basePricePerKg * weight);
+      let discountPercent = 0;
+      let reason = '';
+
+      if (weight >= 2) {
+        discountPercent = 20;
+        reason = '২ কেজি+ ফ্ল্যাট ২০% ছাড়';
+      } else if (isCustomCake && mode === 'pickup') {
+        discountPercent = 15;
+        reason = 'শপ পিকআপ ১৫% ছাড়';
+      }
+
+      const discountAmount = Math.round(rawPrice * (discountPercent / 100));
+      const finalPrice = rawPrice - discountAmount;
+      return { rawPrice, discountPercent, discountAmount, finalPrice, reason };
+    }
+
+    // 8. Render Category Filter & Product Cards
+    function renderCategories() {
+      const categories = ['সবগুলো', 'সিগনেচার কেক', 'কাস্টম স্পেশাল', 'ইভেন্ট ও প্রতিষ্ঠান', 'পেস্ট্রি ও স্ন্যাকস'];
+      const bar = document.getElementById('categoryFilterBar');
+      bar.innerHTML = categories.map(cat => `
+        <button onclick="filterCategory('${cat}')" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition cursor-pointer ${selectedCategory === cat ? 'bg-espresso text-white' : 'bg-white text-espresso border border-borderwarm hover:border-terracotta'}">
+          ${cat}
+        </button>
+      `).join('');
+    }
+
+    function filterCategory(cat) {
+      selectedCategory = cat;
+      renderCategories();
+      renderProducts();
+    }
+
+    function selectProductWeight(productId, weight) {
+      selectedWeights[productId] = weight;
+      renderProducts();
+    }
+
+    function renderProducts() {
+      const grid = document.getElementById('productGrid');
+      const filtered = selectedCategory === 'সবগুলো'
+        ? PRODUCTS
+        : PRODUCTS.filter(p => p.category === selectedCategory);
+
+      grid.innerHTML = filtered.map(p => {
+        const w = selectedWeights[p.id] || p.defaultWeight;
+        const pricing = calculateItemPricing(p.basePricePerKg, w, p.isCustomCake, receivingMode);
+
+        return `
+          <article class="bg-white rounded-2xl border border-borderwarm overflow-hidden flex flex-col justify-between shadow-2xs hover:shadow-md transition">
+            <div>
+              <div class="relative aspect-4/3 bg-stone-100 overflow-hidden">
+                <img src="${p.img}" alt="${p.name}" loading="lazy" width="700" height="525" class="w-full h-full object-cover" />
+                <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-espresso/90 text-white text-[11px] font-semibold">
+                  ${p.category}
+                </span>
+                ${pricing.discountPercent > 0 ? `
+                  <span class="absolute top-3 right-3 px-2.5 py-1 rounded-full bg-terracotta text-white text-[11px] font-bold">
+                    ${toBn(pricing.discountPercent)}% ছাড়
+                  </span>
+                ` : ''}
+              </div>
+
+              <div class="p-5 space-y-3">
+                <h3 class="font-serif-bn text-lg font-bold text-espresso leading-snug">${p.name}</h3>
+                <p class="text-xs text-muted leading-relaxed">${p.desc}</p>
+
+                <!-- Weight Selector -->
+                ${p.weights.length > 1 ? `
+                  <div class="pt-1">
+                    <span class="block text-[11px] font-bold text-muted mb-1.5">ওজন নির্বাচন করুন:</span>
+                    <div class="grid grid-cols-3 gap-1.5">
+                      ${p.weights.map(weightOpt => `
+                        <button type="button" onclick="selectProductWeight('${p.id}', ${weightOpt})" class="py-1.5 px-2 rounded-lg text-xs font-semibold border transition cursor-pointer ${w === weightOpt ? 'bg-espresso text-white border-espresso' : 'bg-alabaster text-espresso border-borderwarm hover:border-terracotta'}">
+                          ${toBn(weightOpt)} কেজি ${weightOpt >= 2 ? '★' : ''}
+                        </button>
+                      `).join('')}
+                    </div>
+                  </div>
+                ` : `
+                  <div class="pt-1">
+                    <span class="inline-block px-2.5 py-1 rounded-lg bg-alabaster border border-borderwarm text-xs font-semibold text-espresso">স্ট্যান্ডার্ড বক্স</span>
+                  </div>
+                `}
+              </div>
+            </div>
+
+            <div class="p-5 pt-3 border-t border-borderwarm flex items-center justify-between gap-2 bg-alabaster/50">
+              <div>
+                ${pricing.discountPercent > 0 ? `
+                  <span class="block text-[11px] text-muted line-through">${formatBdt(pricing.rawPrice)}</span>
+                ` : ''}
+                <span class="font-serif-bn text-xl font-bold text-espresso">${formatBdt(pricing.finalPrice)}</span>
+                ${pricing.reason ? `<span class="block text-[10px] text-emerald-700 font-semibold">${pricing.reason}</span>` : ''}
+              </div>
+              <button type="button" onclick="addMenuProductToCart('${p.id}')" class="px-4 py-2.5 rounded-xl bg-terracotta hover:bg-[#9e3c1d] text-white text-xs sm:text-sm font-bold transition cursor-pointer min-h-[42px]">
+                + ব্যাগে নিন
+              </button>
+            </div>
+          </article>
+        `;
+      }).join('');
+    }
+
+    // 9. Custom Cake Studio Live Calculator
+    function setCustomWeight(w) {
+      customWeight = w;
+      document.querySelectorAll('.custom-weight-btn').forEach(btn => {
+        const bw = parseFloat(btn.getAttribute('data-weight'));
+        if (bw === w) {
+          btn.className = 'custom-weight-btn py-3 px-3 rounded-xl border-2 border-terracotta bg-espresso text-white text-xs sm:text-sm font-semibold cursor-pointer';
+        } else {
+          btn.className = 'custom-weight-btn py-3 px-3 rounded-xl border border-borderwarm bg-white text-xs sm:text-sm font-semibold text-espresso cursor-pointer';
+        }
+      });
+      updateCustomCakeCalculator();
+    }
+
+    function selectPresetInAtelier(occasionText, weightVal) {
+      const occSelect = document.getElementById('customOccasion');
+      if (occSelect) occSelect.value = occasionText;
+      setCustomWeight(weightVal);
+    }
+
+    function applyOfferPreset(preset) {
+      if (preset === 'pickup15') {
+        setReceivingMode('pickup');
+        showToast('🏪 শপ পিকআপ মোড চালু হয়েছে: সব কাস্টম কেকে ১৫% ছাড়!');
+      } else if (preset === 'cake2kg20') {
+        setCustomWeight(2);
+        document.getElementById('atelier').scrollIntoView({ behavior: 'smooth' });
+        showToast('🎂 ২ কেজি কেক সিলেক্ট হয়েছে: ফ্ল্যাট ২০% মেগা ছাড় চালু!');
+      }
+    }
+
+    function setReceivingMode(mode) {
+      receivingMode = mode;
+      const headerLabel = document.getElementById('headerModeLabel');
+      if (headerLabel) {
+        headerLabel.textContent = mode === 'pickup'
+          ? '🏪 শপ পিকআপ (১৫% ছাড়)'
+          : '🚚 হোম ডেলিভারি মোড';
+      }
+
+      // Studio buttons
+      const spBtn = document.getElementById('studioPickupBtn');
+      const sdBtn = document.getElementById('studioDeliveryBtn');
+      if (spBtn && sdBtn) {
+        spBtn.className = mode === 'pickup'
+          ? 'p-4 rounded-2xl border-2 border-terracotta bg-amber-50/70 text-left transition cursor-pointer'
+          : 'p-4 rounded-2xl border border-borderwarm bg-white text-left transition cursor-pointer';
+        sdBtn.className = mode === 'delivery'
+          ? 'p-4 rounded-2xl border-2 border-terracotta bg-amber-50/70 text-left transition cursor-pointer'
+          : 'p-4 rounded-2xl border border-borderwarm bg-white text-left transition cursor-pointer';
+      }
+
+      // Cart drawer buttons
+      const cpBtn = document.getElementById('cartPickupBtn');
+      const cdBtn = document.getElementById('cartDeliveryBtn');
+      if (cpBtn && cdBtn) {
+        cpBtn.className = mode === 'pickup'
+          ? 'py-2 px-3 rounded-xl text-xs font-bold border-2 border-terracotta bg-espresso text-white cursor-pointer'
+          : 'py-2 px-3 rounded-xl text-xs font-bold border border-borderwarm bg-white text-espresso cursor-pointer';
+        cdBtn.className = mode === 'delivery'
+          ? 'py-2 px-3 rounded-xl text-xs font-bold border-2 border-terracotta bg-espresso text-white cursor-pointer'
+          : 'py-2 px-3 rounded-xl text-xs font-bold border border-borderwarm bg-white text-espresso cursor-pointer';
+      }
+
+      renderProducts();
+      updateCustomCakeCalculator();
+      renderCart();
+    }
+
+    function toggleReceivingMode() {
+      setReceivingMode(receivingMode === 'pickup' ? 'delivery' : 'pickup');
+    }
+
+    function updateCustomCakeCalculator() {
+      const occasion = document.getElementById('customOccasion').value;
+      const flavorSelect = document.getElementById('customFlavor');
+      const flavorName = flavorSelect.value;
+      const ratePerKg = parseFloat(flavorSelect.options[flavorSelect.selectedIndex].getAttribute('data-rate')) || 1300;
+      const msg = document.getElementById('customCakeMessage').value.trim() || 'শুভ জন্মদিন!';
+
+      const pricing = calculateItemPricing(ratePerKg, customWeight, true, receivingMode);
+
+      document.getElementById('summaryOccasion').textContent = occasion;
+      document.getElementById('summaryWeight').textContent = toBn(customWeight) + ' কেজি';
+      document.getElementById('summaryFlavor').textContent = flavorName;
+      document.getElementById('summaryMode').textContent = receivingMode === 'pickup'
+        ? 'দোকানে এসে রিসিভ (১৫% ছাড়)'
+        : 'হোম / ইভেন্ট ডেলিভারি';
+      document.getElementById('summaryMessage').textContent = '“' + msg + '”';
+
+      document.getElementById('summaryRegularPrice').textContent = formatBdt(pricing.rawPrice);
+      document.getElementById('summaryDiscountReason').textContent = pricing.discountPercent > 0
+        ? pricing.reason + ':'
+        : 'প্রযোজ্য ছাড় (শপ পিকআপে ১৫% বা ২ কেজিতে ২০%):';
+      document.getElementById('summaryDiscountAmount').textContent = '- ' + formatBdt(pricing.discountAmount);
+      document.getElementById('summaryFinalPrice').textContent = formatBdt(pricing.finalPrice);
+
+      const badge = document.getElementById('studioDiscountBadge');
+      if (pricing.discountPercent === 20) {
+        badge.textContent = '২০% মেগা ছাড় চালু!';
+        badge.className = 'px-3 py-1 rounded-full bg-amber-400 text-espresso text-xs font-bold';
+      } else if (pricing.discountPercent === 15) {
+        badge.textContent = '১৫% শপ পিকআপ ছাড়!';
+        badge.className = 'px-3 py-1 rounded-full bg-terracotta text-white text-xs font-bold';
+      } else {
+        badge.textContent = 'হোম ডেলিভারি';
+        badge.className = 'px-3 py-1 rounded-full bg-stone-700 text-stone-200 text-xs font-semibold';
+      }
+    }
+
+    // 10. Cart Actions
+    function saveCart() {
+      try { localStorage.setItem('db_html_cart_v1', JSON.stringify(cart)); } catch (e) {}
+    }
+
+    function addMenuProductToCart(productId) {
+      const p = PRODUCTS.find(item => item.id === productId);
+      if (!p) return;
+      const w = selectedWeights[p.id] || p.defaultWeight;
+      const cartKey = `${p.id}_${w}`;
+      const existing = cart.find(c => c.cartKey === cartKey);
+
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        cart.push({
+          cartKey,
+          name: p.name,
+          weight: w,
+          basePricePerKg: p.basePricePerKg,
+          isCustomCake: p.isCustomCake,
+          note: '',
+          qty: 1
+        });
+      }
+      saveCart();
+      renderCart();
+      showToast(`“${p.name} (${toBn(w)} কেজি)” ব্যাগে যোগ হয়েছে!`);
+    }
+
+    function addCustomCakeToCart() {
+      const occasion = document.getElementById('customOccasion').value;
+      const flavorSelect = document.getElementById('customFlavor');
+      const flavorName = flavorSelect.value;
+      const ratePerKg = parseFloat(flavorSelect.options[flavorSelect.selectedIndex].getAttribute('data-rate')) || 1300;
+      const msg = document.getElementById('customCakeMessage').value.trim() || 'শুভ জন্মদিন!';
+      const dateVal = document.getElementById('customCakeDate').value;
+      const extraNotes = document.getElementById('customCakeNotes').value.trim();
+
+      const customItem = {
+        cartKey: 'custom_' + Date.now(),
+        name: `কাস্টম কেক (${flavorName})`,
+        weight: customWeight,
+        basePricePerKg: ratePerKg,
+        isCustomCake: true,
+        note: `${occasion} | লেখা: "${msg}" ${dateVal ? '| তারিখ: ' + dateVal : ''} ${extraNotes ? '| নোট: ' + extraNotes : ''}`,
+        qty: 1
+      };
+
+      cart.push(customItem);
+      saveCart();
+      renderCart();
+      toggleCartDrawer(true);
+      showToast('আপনার কাস্টম কেকটি অর্ডার ব্যাগে যোগ করা হয়েছে!');
+    }
+
+    function updateCartQty(cartKey, delta) {
+      const idx = cart.findIndex(c => c.cartKey === cartKey);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) cart.splice(idx, 1);
+      saveCart();
+      renderCart();
+    }
+
+    function renderCart() {
+      const container = document.getElementById('cartItemsContainer');
+      const badge = document.getElementById('cartCountBadge');
+      const totalItems = cart.reduce((sum, i) => sum + i.qty, 0);
+      badge.textContent = toBn(totalItems);
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 space-y-2">
+            <p class="font-serif-bn text-lg font-bold text-espresso">আপনার অর্ডার ব্যাগ খালি</p>
+            <p class="text-xs text-muted">মেনু থেকে বা কাস্টম কেক স্টুডিও থেকে পছন্দের কেক যোগ করুন।</p>
+          </div>
+        `;
+      } else {
+        container.innerHTML = cart.map(item => {
+          const pricing = calculateItemPricing(item.basePricePerKg, item.weight, item.isCustomCake, receivingMode);
+          return `
+            <div class="p-3.5 rounded-2xl bg-alabaster border border-borderwarm space-y-2">
+              <div class="flex justify-between items-start gap-2">
+                <div>
+                  <h4 class="font-serif-bn font-bold text-sm text-espresso">${item.name}</h4>
+                  <span class="text-xs text-muted">ওজন: ${toBn(item.weight)} কেজি</span>
+                  ${pricing.reason ? `<span class="ml-2 px-2 py-0.5 rounded-full bg-amber-100 text-terracotta text-[10px] font-bold">${pricing.reason}</span>` : ''}
+                </div>
+                <span class="font-serif-bn font-bold text-sm text-espresso">${formatBdt(pricing.finalPrice * item.qty)}</span>
+              </div>
+              ${item.note ? `<p class="text-[11px] text-muted bg-white p-2 rounded-lg border border-borderwarm">${item.note}</p>` : ''}
+              <div class="flex items-center justify-between pt-1">
+                <div class="inline-flex items-center gap-2 bg-white border border-borderwarm rounded-lg px-2 py-1">
+                  <button type="button" onclick="updateCartQty('${item.cartKey}', -1)" class="w-6 h-6 rounded bg-stone-100 font-bold text-xs cursor-pointer">-</button>
+                  <span class="text-xs font-bold px-1">${toBn(item.qty)}</span>
+                  <button type="button" onclick="updateCartQty('${item.cartKey}', 1)" class="w-6 h-6 rounded bg-stone-100 font-bold text-xs cursor-pointer">+</button>
+                </div>
+                <button type="button" onclick="updateCartQty('${item.cartKey}', -999)" class="text-xs text-red-600 hover:underline cursor-pointer">মুছে ফেলুন</button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      // Totals
+      let rawSubtotal = 0;
+      let totalDiscount = 0;
+      cart.forEach(item => {
+        const p = calculateItemPricing(item.basePricePerKg, item.weight, item.isCustomCake, receivingMode);
+        rawSubtotal += p.rawPrice * item.qty;
+        totalDiscount += p.discountAmount * item.qty;
+      });
+
+      const deliveryFee = (cart.length > 0 && receivingMode === 'delivery') ? 60 : 0;
+      const grandTotal = rawSubtotal - totalDiscount + deliveryFee;
+
+      document.getElementById('cartSubtotal').textContent = formatBdt(rawSubtotal);
+      document.getElementById('cartDiscountValue').textContent = '- ' + formatBdt(totalDiscount);
+      document.getElementById('cartDeliveryFee').textContent = deliveryFee === 0 ? 'ফ্রি (শপ পিকআপ)' : formatBdt(deliveryFee);
+      document.getElementById('cartGrandTotal').textContent = formatBdt(grandTotal);
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cartDrawer');
+      const backdrop = document.getElementById('cartDrawerBackdrop');
+      if (open) {
+        backdrop.classList.remove('hidden');
+        drawer.classList.remove('translate-x-full');
+      } else {
+        backdrop.classList.add('hidden');
+        drawer.classList.add('translate-x-full');
+      }
+    }
+
+    function toggleMobileMenu() {
+      const m = document.getElementById('mobileMenuDrawer');
+      m.classList.toggle('hidden');
+    }
+
+    // 11. Render FAQ Accordion
+    function renderFaqs() {
+      const container = document.getElementById('faqContainer');
+      container.innerHTML = FAQS.map((item, idx) => `
+        <div class="bg-white rounded-2xl border border-borderwarm overflow-hidden">
+          <h3>
+            <button type="button" onclick="toggleFaq(${idx})" class="w-full p-5 text-left flex items-center justify-between gap-4 font-serif-bn font-bold text-base sm:text-lg text-espresso cursor-pointer">
+              <span>${item.q}</span>
+              <span id="faqIcon-${idx}" class="text-terracotta text-xl font-bold">+</span>
+            </button>
+          </h3>
+          <div id="faqAns-${idx}" class="${idx === 0 ? '' : 'hidden'} px-5 pb-5 text-sm text-muted leading-relaxed border-t border-borderwarm pt-3">
+            ${item.a}
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function toggleFaq(idx) {
+      const ans = document.getElementById('faqAns-' + idx);
+      const icon = document.getElementById('faqIcon-' + idx);
+      const isHidden = ans.classList.contains('hidden');
+      ans.classList.toggle('hidden');
+      icon.textContent = isHidden ? '−' : '+';
+    }
+
+    // 12. Submit Order & Generate WhatsApp Bridge
+    function submitFinalOrder(e) {
+      e.preventDefault();
+      if (cart.length === 0) {
+        showToast('অনুগ্রহ করে প্রথমে অর্ডার ব্যাগে অন্তত একটি কেক যোগ করুন!');
+        return;
+      }
+      const name = document.getElementById('custName').value.trim();
+      const phone = document.getElementById('custPhone').value.trim();
+      const address = document.getElementById('custAddress').value.trim() || (receivingMode === 'pickup' ? 'দোকানে এসে রিসিভ করব' : 'ফোনে জানানো হবে');
+
+      const grandTotalText = document.getElementById('cartGrandTotal').textContent;
+      const discountText = document.getElementById('cartDiscountValue').textContent;
+      const modeText = receivingMode === 'pickup' ? 'দোকানে এসে রিসিভ (১৫% ছাড়)' : 'হোম ডেলিভারি';
+
+      const itemsLines = cart.map((c, i) => `${i + 1}. ${c.name} (${c.weight} কেজি x ${c.qty}) ${c.note ? '[' + c.note + ']' : ''}`).join('\n');
+      const waText = `নমস্কার ডেলিশিয়াস বেকারি!\nআমি একটি অর্ডার করতে চাই:\n\nনাম: ${name}\nমোবাইল: ${phone}\nমাধ্যম: ${modeText}\nঠিকানা/সময়: ${address}\n\nঅর্ডার তালিকা:\n${itemsLines}\n\nমোট ছাড়: ${discountText}\nসর্বমোট বিল: ${grandTotalText}`;
+
+      const shopPhoneRaw = (document.querySelector('[data-editable="shopPhone"]')?.textContent || '+8801700000000').replace(/[^0-9]/g, '');
+      const waUrl = `https://wa.me/${shopPhoneRaw}?text=${encodeURIComponent(waText)}`;
+
+      document.getElementById('orderSuccessSummary').textContent = `ধন্যবাদ ${name}! আপনার সর্বমোট বিল ${grandTotalText} (${modeText})। নিচের সবুজ বাটনে ক্লিক করে সরাসরি আমাদের হোয়াটসঅ্যাপে অর্ডার রিসিটটি পাঠিয়ে দিন।`;
+      document.getElementById('whatsappOrderLink').href = waUrl;
+
+      toggleCartDrawer(false);
+      const modal = document.getElementById('orderSuccessModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+
+      cart = [];
+      saveCart();
+      renderCart();
+    }
+
+    function closeOrderModal() {
+      const modal = document.getElementById('orderSuccessModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function handleQuickContact(e) {
+      e.preventDefault();
+      const name = document.getElementById('contactName').value.trim();
+      const phone = document.getElementById('contactPhone').value.trim();
+      const shopPhoneRaw = (document.querySelector('[data-editable="shopPhone"]')?.textContent || '+8801700000000').replace(/[^0-9]/g, '');
+      const msg = `হ্যালো ডেলিশিয়াস বেকারি! আমি ${name} (${phone})। আমি একটি কাস্টম কেক / ইভেন্ট অর্ডারের ব্যাপারে কথা বলতে চাই।`;
+      window.open(`https://wa.me/${shopPhoneRaw}?text=${encodeURIComponent(msg)}`, '_blank');
+    }
+
+    // 13. Live Editable Placeholders Mode
+    function toggleEditMode() {
+      editMode = !editMode;
+      const btn = document.getElementById('toggleEditModeBtn');
+      const resetBtn = document.getElementById('resetDataBtn');
+      const banner = document.getElementById('editModeBanner');
+      const editables = document.querySelectorAll('[data-editable]');
+
+      if (editMode) {
+        btn.textContent = '✅ এডিট মোড: অন (সেভ হচ্ছে)';
+        btn.className = 'px-3 py-1 rounded-full text-xs font-bold bg-amber-400 text-espresso transition cursor-pointer';
+        resetBtn.classList.remove('hidden');
+        banner.classList.remove('hidden');
+        editables.forEach(el => {
+          el.setAttribute('contenteditable', 'true');
+          el.classList.add('outline-2', 'outline-dashed', 'outline-terracotta', 'px-1', 'rounded');
+          el.addEventListener('input', saveEditableContent);
+        });
+      } else {
+        btn.textContent = '✏️ তথ্য এডিট মোড: অফ';
+        btn.className = 'px-3 py-1 rounded-full text-xs font-medium bg-stone-800 hover:bg-terracotta text-white transition border border-stone-700 cursor-pointer';
+        resetBtn.classList.add('hidden');
+        banner.classList.add('hidden');
+        editables.forEach(el => {
+          el.removeAttribute('contenteditable');
+          el.classList.remove('outline-2', 'outline-dashed', 'outline-terracotta', 'px-1', 'rounded');
+        });
+      }
+    }
+
+    function saveEditableContent() {
+      const data = {};
+      document.querySelectorAll('[data-editable]').forEach(el => {
+        data[el.getAttribute('data-editable')] = el.textContent;
+      });
+      try { localStorage.setItem('db_html_edits_v1', JSON.stringify(data)); } catch (e) {}
+    }
+
+    function resetSiteData() {
+      localStorage.removeItem('db_html_edits_v1');
+      localStorage.removeItem('db_html_cart_v1');
+      location.reload();
+    }
+
+    // 14. Toast Helper
+    let toastTimer = null;
+    function showToast(msg) {
+      const t = document.getElementById('toastNotification');
+      t.textContent = msg;
+      t.classList.remove('hidden');
+      if (toastTimer) clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => t.classList.add('hidden'), 3200);
+    }
+
+    // Initialize Page on Load
+    window.addEventListener('DOMContentLoaded', () => {
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('customCakeDate');
+      if (dateInput) {
+        dateInput.min = today;
+        dateInput.value = today;
+      }
+      renderCategories();
+      renderProducts();
+      setReceivingMode('pickup');
+      setCustomWeight(2);
+      renderFaqs();
+      renderCart();
+    });
+  </script>
+</body>
+</html>
